@@ -20,7 +20,7 @@ const Notestaker = ({ onAddNote }) => {
           <textarea
             className="w-full h-40 p-2 border border-black-300 "
             placeholder="Write your notes here."
-            value={note.content} // bind to content
+            value={note.content}
             onChange={(e) => setNote({ ...note, content: e.target.value })}
           ></textarea>
           <button
