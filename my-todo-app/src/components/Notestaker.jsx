@@ -18,8 +18,8 @@ const Notestaker = ({ onAddNote }) => {
       <div className="mt-4 w-full max-w-md">
         <form onSubmit={handleSubmit}>
           <textarea
-            className="w-full h-40 p-2 border border-black-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brown-500"
-            placeholder="Write your notes here..."
+            className="w-full h-40 p-2 border border-black-300 "
+            placeholder="Write your notes here."
             value={note.content} // bind to content
             onChange={(e) => setNote({ ...note, content: e.target.value })}
           ></textarea>
